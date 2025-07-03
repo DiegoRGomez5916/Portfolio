@@ -7,96 +7,54 @@
     color: white;
 }
 
-.hero-section {
+.hero-container {
     height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 15px;
-    align-items: center;
-    justify-items: center;
-    padding-top: 25vh;
-    padding-bottom: 25vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 10px;
 }
 
-.hero-heading {
-    grid-column: 2 / span 3;
-    grid-row: 1;
-}
-
-.hero-subheading {
-    grid-column: 2 / span 3;
-    grid-row: 2;
-}
-
-.hero-cta {
-    height: fit-content;
-    width: fit-content;
-    grid-column: 2 / span 3;
-    grid-row: 3;
+.hero-heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
 }
 
 .hero-image {
-    height: 100%;
-    grid-column: 7 / span 3;
-    grid-row: 1 / span 3;
+    width: 30%;
+    height: auto;
+    align-self: center;
 }
 
 .navigation {
     display: flex;
     justify-content: space-around;
-    position: sticky;
-    top: 0;
-    padding: 20px;
+    align-content: center;
 }
 
-.project-grid {
+.project-container {
     height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 15px;
-    align-items: center;
-    justify-items: center;
-    padding: 10vh 10vw 10vh 10vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 10px;
 }
 
-.about-section {
+.about-container {
     height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 15px;
-    align-items: center;
-    justify-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 10px;
 }
 
-.about-heading {
-    grid-column: 2 / span 3;
-    grid-row: 1;
-}
-
-.about-subheading {
-    grid-column: 2 / span 3;
-    grid-row: 2;
-}
-
-.contact-section {
+.contact-container {
     height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 15px;
-    align-items: center;
-    justify-items: center;
-}
-
-.contact-heading {
-    grid-column: 2 / span 3;
-    grid-row: 1;
-}
-
-.contact-subheading {
-    grid-column: 2 / span 3;
-    grid-row: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 10px;
 }
