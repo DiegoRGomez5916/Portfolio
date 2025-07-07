@@ -5,6 +5,7 @@
     font-family: 'Courier New', Courier, monospace;
     background-color: #000000;
     color: #00cc66;
+    text-shadow: 0 0 10px #00cc66;
 }
 
 .hero-container {
@@ -24,12 +25,6 @@
     gap: 10px;
 }
 
-.hero-image {
-    width: 30%;
-    height: auto;
-    align-self: center;
-}
-
 .navigation {
     display: flex;
     justify-content: space-around;
@@ -46,12 +41,19 @@
 }
 
 .project-container {
-    height: 100vh;
+    min-height: 100vh;
+    width: 75%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: center;
     gap: 10px;
     flex-wrap: wrap;
+}
+
+.project-card {
+    border: 1px solid #00cc66;
+    padding: 15px 20px 15px 20px;
+    flex-basis: 0 0;
 }
 
 .about-container {
