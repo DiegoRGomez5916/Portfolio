@@ -124,7 +124,7 @@ typeWriter(bootSequence, document.getElementById("boot-sequence"), 0, () => {
         mainHeading.textContent = "";
         mainSubheading.textContent = "";
         typingSpeed = 50;
-        newLineSpeed = 500
+        newLineSpeed = 250;
         typeWriter(typingContent[0], mainHeading, 0, () => {
             typeWriter(typingContent[1], mainSubheading);
         });
