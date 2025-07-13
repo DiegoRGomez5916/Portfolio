@@ -17,10 +17,18 @@
 }
 
 .crt {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
     background: linear-gradient(to top, #000000, #000000, #222222, #222222);
     background-size: cover;
     background-size: 100% 4px;
     animation: scanlines 10s steps(60) infinite;
+}
+
+#boot-sequence {
+    padding: 30px 20px 20px 20px;
 }
 
 .hero-container {
