@@ -44,8 +44,7 @@ function typeWriter(text, element, i = 0, callback = null) {
 }
 
 typeWriter(bootSequence, document.getElementById("boot-sequence"), 0, () => {
-    bodyElement.innerHTML = `
-        <header class="hero-container">
+    bodyElement.innerHTML = `<header class="hero-container" id="home">
             <div class="hero-heading-container">
                 <h1 id="main-heading">> SYSTEM ONLINE</h1>
                 <h3 id="main-subheading">> // compiling creativity</h3>
@@ -70,13 +69,13 @@ typeWriter(bootSequence, document.getElementById("boot-sequence"), 0, () => {
             </pre>
         </header>
         <nav class="navigation">
-            <a>Home</a>
-            <a>Projects</a>
-            <a>About</a>
-            <a>Contact</a>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
         </nav>
         <main class="website-body">
-            <section class="project-container">
+            <section class="project-container" id="projects">
                 <article class="project-card">
                     <h1>[Project Title]</h1>
                     <p>[Project Description]</p>
@@ -85,7 +84,7 @@ typeWriter(bootSequence, document.getElementById("boot-sequence"), 0, () => {
                     <p>[GitHub Repo]</p>
                 </article>
             </section>
-            <section class="about-container">
+            <section class="about-container" id="about">
                 <h1>> Who_Am_I.exe</h1>
                 <h3>// returning user profile...</h3>
                 <h3>> echo "Hello, I'm Diego Gomez"</h3>
@@ -99,7 +98,7 @@ typeWriter(bootSequence, document.getElementById("boot-sequence"), 0, () => {
                 <p>"Code with purpose. Design matters. Debug like a gardener."</p>
                 <h3>> END OF LINE _</h3>
             </section>
-            <section class="contact-container">
+            <section class="contact-container" id="contact">
                     <h1>> Connect.exe</h1>
                     <h3>// scanning for active channels...</h3>
                     <h3>> echo "Reach out to Diego Gomez"</h3>
