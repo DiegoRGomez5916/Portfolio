@@ -16,12 +16,24 @@
     }
 }
 
+@keyframes flicker {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
 .crt {
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    background: linear-gradient(to top, #000000, #000000, #222222, #222222);
+    background: linear-gradient(to top, #000000, #000000, #002200, #002200);
     background-size: cover;
     background-size: 100% 4px;
     animation: scanlines 10s steps(60) infinite;
