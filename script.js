@@ -28,7 +28,11 @@ System ready.`
 
 
 
-bodyElement.innerHTML = `<pre id="boot-sequence"></pre>`
+bodyElement.innerHTML = `
+        <div class="vignette-overlay"></div>
+            <div class="crt">
+                <pre id="boot-sequence"></pre>
+            </div>`
 
 let typingSpeed = 10;
 let newLineSpeed = 2000;
@@ -50,8 +54,24 @@ function typeWriter(text, element, i = 0, callback = null) {
     }
 }
 
+const flicker = () => {
+    const text = document.getElementById("flicker-text");
+    const random = Math.random();
+    text.style.opacity = random < 0.75 ? 1 : 0.85;
+};
+
+const bigFlicker = () => {
+    const text = document.getElementById("flicker-text");
+    const random = Math.random();
+    text.style.opacity = random < 0.95 ? 1 : 0.75;
+};
+
+setInterval(flicker, 100);
+setInterval(bigFlicker, 150);
+
 typeWriter(bootSequence, document.getElementById("boot-sequence"), 0, () => {
     window.scrollTo(0, 0)
+    document.getElementById("html").style.scrollBehavior = "smooth";
     bodyElement.innerHTML = bodyContent;
         const mainHeading = document.getElementById("main-heading");
         const mainSubheading = document.getElementById("main-subheading");
