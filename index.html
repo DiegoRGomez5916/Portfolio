@@ -1,83 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html id="html">
     <head>
         <title>Web Portfolio</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body class="crt" id="body">
-        <header class="hero-container" id="home">
-            <div class="hero-heading-container">
-                <h1 id="main-heading">> SYSTEM ONLINE</h1>
-                <h3 id="main-subheading">> // compiling creativity</h3>
-            </div>
-            <pre>
-  ____  _                        
- |  _ \(_) ___  __ _  ___        
- | | | | |/ _ \/ _` |/ _ \       
- | |_| | |  __/ (_| | (_) |      
- |____/|_|\___|\__, |\___/       
-   ____        |___/             
-  / ___| ___  _ __ ___   ___ ____
- | |  _ / _ \| '_ ` _ \ / _ \_  /
- | |_| | (_) | | | | | |  __// / 
-  \____|\___/|_| |_| |_|\___/___|
-  ____                           
- |  _ \  _____   __              
- | | | |/ _ \ \ / /              
- | |_| |  __/\ V /               
- |____/ \___| \_/                
-                                 
-</pre>
-        </header>
-        <nav class="navigation">
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <main class="website-body">
-            <section class="project-container" id="projects">
-                <article class="project-card">
-                    <h1>[Project Title]</h1>
-                    <p>[Project Description]</p>
-                    <p>[Project Stack]</p>
-                    <p>[Link]</p>
-                    <p>[GitHub Repo]</p>
-                </article>
-            </section>
-            <section class="about-container" id="about">
-                <h1>> Who_Am_I.exe</h1>
-                <h3>// returning user profile...</h3>
-                <h3>> echo "Hello, I'm Diego Gomez"</h3>
-                <h3>> bio.log:</h3>
-                <p>"Passionate about building clean, user-friendly projects that solve real problems."</p>
-                <p>"Skilled in HTML, CSS, JavaScript, and Python."</p>
-                <p>"Learning every day and ready for my first dev role."</p>
-                <h3>> hobbies:</h3>
-                <p>"gaming, gardening, cooking, coffee"</p>
-                <h3>> dev.philosophy:</h3>
-                <p>"Code with purpose. Design matters. Debug like a gardener."</p>
-                <h3>> END OF LINE _</h3>
-            </section>
-            <section class="contact-container" id="contact">
-                    <h1>> Connect.exe</h1>
-                    <h3>// scanning for active channels...</h3>
-                    <h3>> echo "Reach out to Diego Gomez"</h3>
-                    <h3>> contact.log:</h3>
-                    <p>"Whether you have a project, a question, or just want to say hi."</p>
-                    <p>"I'm always open to chat and collaborate."</p>
-                    <p>"Response time: quick — unless I'm deep in code or making coffee."</p>
-                    <h3>> available_on:</h3>
-                    <p>"email: diego.dev@example.com"</p>
-                    <p>"github: github.com/diegogomez"</p>
-                    <p>"linkedin: linkedin.com/in/diegogomez"</p>
-                    <h3>> ping -c 1 diego</h3>
-                    <p>"message sent. awaiting response..."</p>
+    <body id="body">
+        <div class="vignette-overlay"></div>
+        <div class="crt">
+            <header class="hero-container" id="home">
+                <div class="hero-heading-container">
+                    <h1 id="main-heading">> SYSTEM ONLINE</h1>
+                    <h2 id="main-subheading">> // compiling creativity</h2>
+                </div>
+                <pre id="flicker-text">
+██████╗ ██╗███████╗ ██████╗  ██████╗         
+██╔══██╗██║██╔════╝██╔════╝ ██╔═══██╗        
+██║  ██║██║█████╗  ██║  ███╗██║   ██║        
+██║  ██║██║██╔══╝  ██║   ██║██║   ██║        
+██████╔╝██║███████╗╚██████╔╝╚██████╔╝        
+╚═════╝ ╚═╝╚══════╝ ╚═════╝  ╚═════╝         
+ ██████╗  ██████╗ ███╗   ███╗███████╗███████╗
+██╔════╝ ██╔═══██╗████╗ ████║██╔════╝╚══███╔╝
+██║  ███╗██║   ██║██╔████╔██║█████╗    ███╔╝ 
+██║   ██║██║   ██║██║╚██╔╝██║██╔══╝   ███╔╝  
+╚██████╔╝╚██████╔╝██║ ╚═╝ ██║███████╗███████╗
+ ╚═════╝  ╚═════╝ ╚═╝     ╚═╝╚══════╝╚══════╝
+██████╗ ███████╗██╗   ██╗                    
+██╔══██╗██╔════╝██║   ██║                    
+██║  ██║█████╗  ██║   ██║                    
+██║  ██║██╔══╝  ╚██╗ ██╔╝                    
+██████╔╝███████╗ ╚████╔╝                     
+╚═════╝ ╚══════╝  ╚═══╝                      
+    </pre>
+            </header>
+            <nav class="navigation">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <main class="website-body">
+                <section class="project-container" id="projects">
+                    <article class="project-card">
+                        <h2>Personal Portfolio</h2>
+                        <p>A retro-themed terminal-style website to showcase my work, blog posts, and experiments with JavaScript and CSS effects.</p>
+                        <h3>Tech Stack:</h3>
+                        <p>HTML5 · CSS3 · JavaScript · ASCII Art · GitHub</p>
+                        <p>Bonus: Typewriter animation, terminal-inspired UI, responsive design</p>
+                        <p>Currently viewing</p>
+                        <p><a href="https://github.com/DiegoRGomez5916/Portfolio" target="_blank">Visit GitHub repo</a></p>
+                    </article>
+                </section>
+                <section class="about-container" id="about">
+                    <h2>> Who_Am_I.exe</h2>
+                    <h3>// returning user profile...</h3>
+                    <h3>> echo "Hello, I'm Diego Gomez"</h3>
+                    <h3>> bio.log:</h3>
+                    <p>"Passionate about building clean, user-friendly projects that solve real problems."</p>
+                    <p>"Skilled in HTML, CSS, JavaScript, and Python."</p>
+                    <p>"Learning every day and ready for my first dev role."</p>
+                    <h3>> hobbies:</h3>
+                    <p>"gaming, gardening, cooking, coffee"</p>
+                    <h3>> dev.philosophy:</h3>
+                    <p>"Code with purpose. Design matters. Debug like a gardener."</p>
                     <h3>> END OF LINE _</h3>
-            </section>
-        </main>
-        <footer>
-        </footer>
+                </section>
+                <section class="contact-container" id="contact">
+                        <h2>> Connect.exe</h2>
+                        <h3>// scanning for active channels...</h3>
+                        <h3>> echo "Reach out to Diego Gomez"</h3>
+                        <h3>> contact.log:</h3>
+                        <p>"Whether you have a project, a question, or just want to say hi."</p>
+                        <p>"I'm always open to chat and collaborate."</p>
+                        <p>"Response time: quick — unless I'm deep in code or making coffee."</p>
+                        <h3>> available_on:</h3>
+                        <p>"email: diegorgomez1@gmail.com"</p>
+                        <p>"github: https://github.com/DiegoRGomez5916"</p>
+                        <p>"linkedin: www.linkedin.com/in/diego-gomez-238ba2164"</p>
+                        <h3>> ping -c 1 diego</h3>
+                        <p>"message sent. awaiting response..."</p>
+                        <h3>> END OF LINE _</h3>
+                </section>
+            </main>
+            <footer>
+                <section class="footer-content">
+                    <p>Built by Diego Gomez — exploring tech, code, and nostalgia.</p>
+                    <p>© 2025 Diego Gomez. All rights reserved.</p>
+                </section>
+            </footer>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
