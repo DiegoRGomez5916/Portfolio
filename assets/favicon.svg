@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+    <style>
+        .blink {
+        animation: blink 1s step-start infinite;
+        }
+        @keyframes blink {
+        50% { opacity: 0; }
+        }
+    </style>
+    <rect width="16" height="16" fill="#000000"/>
+    <text x="2" y="12" font-family="Courier, monospace" font-size="11" fill="#00cc66">&gt;</text>
+    <text x="9" y="12" font-family="Courier, monospace" font-size="11" fill="#00cc66" class="blink">_</text>
+</svg>
