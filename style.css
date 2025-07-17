@@ -7,14 +7,39 @@
     text-shadow: 0 0 10px #00cc66;
 }
 
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     min-width: 100vw;
     min-height: 100vh;
-    scrollbar-width: 0;
 }
 
-body::-webkit-scrollbar {
-    display: none;
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+pre {
+    font-size: 0.8rem;
+    line-height: 1;
 }
 
 @keyframes scanlines {
@@ -76,6 +101,7 @@ body::-webkit-scrollbar {
 }
 
 #flicker-text {
+    opacity: 1;
     transition: opacity 0.1s;
 }
 
