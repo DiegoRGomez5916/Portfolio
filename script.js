@@ -34,7 +34,7 @@ bodyElement.innerHTML = `
                 <pre id="boot-sequence"></pre>
             </div>`
 
-let typingSpeed = 10;
+let typingSpeed = 1;
 let newLineSpeed = 2000;
 
 function scrollToBottom(char) {
